@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "uk-install":"cd src/app/uikit && yarn install",
+    "uk-watch":"cd src/app/uikit && yarn watch",
+    "uk-compile":"cd src/app/uikit && yarn compile"
   },
   "dependencies": {
     "next": "13.2.4",

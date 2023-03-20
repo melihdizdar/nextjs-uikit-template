@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <div className='uk-section'>
         <div className='uk-container'>
-          <div className='uk-h1 uk-text-primary'>Hello World</div>
+          <div className='uk-h1 test'>Hello World</div>
         </div>
       </div>
     </main>

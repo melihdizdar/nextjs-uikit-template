@@ -899,34 +899,6 @@ a.uk-link-reset,
   margin-top: 0;
 }
 /* ========================================================================
-   Component: Description list
- ========================================================================== */
-/*
- * Term
- */
-.uk-description-list > dt {
-  color: #333;
-  font-size: 0.875rem;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-.uk-description-list > dt:nth-child(n+2) {
-  margin-top: 20px;
-}
-/*
- * Description
- */
-/* Style modifier
- ========================================================================== */
-/*
- * Line
- */
-.uk-description-list-divider > dt:nth-child(n+2) {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid #e5e5e5;
-}
-/* ========================================================================
    Component: Table
  ========================================================================== */
 /*
@@ -2176,56 +2148,6 @@ select.uk-form-width-xsmall {
   z-index: 1;
 }
 /* ========================================================================
-   Component: Progress
- ========================================================================== */
-/*
- * 1. Add the correct vertical alignment in all browsers.
- * 2. Behave like a block element.
- * 3. Remove borders in Firefox.
- * 4. Remove default style in Chrome, Safari and Edge.
- * 5. Style
- */
-.uk-progress {
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
-  display: block;
-  width: 100%;
-  /* 3 */
-  border: 0;
-  /* 4 */
-  background-color: #f8f8f8;
-  /* 5 */
-  margin-bottom: 20px;
-  height: 15px;
-  border-radius: 500px;
-  overflow: hidden;
-}
-/* Add margin if adjacent element */
-* + .uk-progress {
-  margin-top: 20px;
-}
-/*
- * Show background color set on `uk-progress` in Chrome, Safari and Edge.
- */
-.uk-progress::-webkit-progress-bar {
-  background-color: transparent;
-}
-/*
- * Progress Bar
- * 1. Transitions don't work on `::-moz-progress-bar` pseudo element in Firefox yet.
- *    https://bugzilla.mozilla.org/show_bug.cgi?id=662351
- */
-.uk-progress::-webkit-progress-value {
-  background-color: #1e87f0;
-  transition: width 0.6s ease;
-}
-.uk-progress::-moz-progress-bar {
-  background-color: #1e87f0;
-  /* 1 */
-  transition: width 0.6s ease;
-}
-/* ========================================================================
    Component: Section
  ========================================================================== */
 /*
@@ -2916,22 +2838,6 @@ select.uk-form-width-xsmall {
   color: #333;
 }
 /* ========================================================================
-   Component: Marker
- ========================================================================== */
-/*
- * Addopts `uk-icon`
- */
-.uk-marker {
-  padding: 5px;
-  background: #222;
-  color: #fff;
-  border-radius: 500px;
-}
-/* Hover */
-.uk-marker:hover {
-  color: #fff;
-}
-/* ========================================================================
    Component: Alert
  ========================================================================== */
 .uk-alert {
@@ -3137,120 +3043,6 @@ select.uk-form-width-xsmall {
  */
 .uk-overlay-primary {
   background: rgba(34, 34, 34, 0.8);
-}
-/* ========================================================================
-   Component: Article
- ========================================================================== */
-.uk-article {
-  display: flow-root;
-}
-/*
- * Remove margin from the last-child
- */
-.uk-article > :last-child {
-  margin-bottom: 0;
-}
-/* Adjacent sibling
- ========================================================================== */
-.uk-article + .uk-article {
-  margin-top: 70px;
-}
-/* Title
- ========================================================================== */
-.uk-article-title {
-  font-size: 2.23125rem;
-  line-height: 1.2;
-}
-/* Tablet landscape and bigger */
-@media (min-width: 960px) {
-  .uk-article-title {
-    font-size: 2.625rem;
-  }
-}
-/* Meta
- ========================================================================== */
-.uk-article-meta {
-  font-size: 0.875rem;
-  line-height: 1.4;
-  color: #999;
-}
-.uk-article-meta a {
-  color: #999;
-}
-.uk-article-meta a:hover {
-  color: #666;
-  text-decoration: none;
-}
-/* ========================================================================
-   Component: Comment
- ========================================================================== */
-/* Sections
- ========================================================================== */
-.uk-comment-body {
-  display: flow-root;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-}
-.uk-comment-header {
-  display: flow-root;
-  margin-bottom: 20px;
-}
-/*
- * Remove margin from the last-child
- */
-.uk-comment-body > :last-child,
-.uk-comment-header > :last-child {
-  margin-bottom: 0;
-}
-/* Title
- ========================================================================== */
-.uk-comment-title {
-  font-size: 1.25rem;
-  line-height: 1.4;
-}
-/* Meta
- ========================================================================== */
-.uk-comment-meta {
-  font-size: 0.875rem;
-  line-height: 1.4;
-  color: #999;
-}
-/* Avatar
- ========================================================================== */
-/* List
- ========================================================================== */
-.uk-comment-list {
-  padding: 0;
-  list-style: none;
-}
-/* Adjacent siblings */
-.uk-comment-list > :nth-child(n+2) {
-  margin-top: 70px;
-}
-/*
- * Sublists
- * Note: General sibling selector allows reply block between comment and sublist
- */
-.uk-comment-list .uk-comment ~ ul {
-  margin: 70px 0 0 0;
-  padding-left: 30px;
-  list-style: none;
-}
-/* Tablet and bigger */
-@media (min-width: 960px) {
-  .uk-comment-list .uk-comment ~ ul {
-    padding-left: 100px;
-  }
-}
-/* Adjacent siblings */
-.uk-comment-list .uk-comment ~ ul > :nth-child(n+2) {
-  margin-top: 70px;
-}
-/* Style modifier
- ========================================================================== */
-.uk-comment-primary {
-  padding: 30px;
-  background-color: #f8f8f8;
 }
 /* ========================================================================
    Component: Search
@@ -4302,41 +4094,6 @@ select.uk-form-width-xsmall {
   margin-bottom: 0;
 }
 /* ========================================================================
-   Component: Leader
- ========================================================================== */
-.uk-leader {
-  overflow: hidden;
-}
-/*
- * 1. Place element in text flow
- * 2. Never break into a new line
- * 3. Get a string back with as many repeating characters to fill the container
- * 4. Prevent wrapping. Overflowing characters will be clipped by the container
- */
-.uk-leader-fill::after {
-  /* 1 */
-  display: inline-block;
-  margin-left: 15px;
-  /* 2 */
-  width: 0;
-  /* 3 */
-  content: attr(data-fill);
-  /* 4 */
-  white-space: nowrap;
-}
-/*
- * Hide if media does not match
- */
-.uk-leader-fill.uk-leader-hide::after {
-  display: none;
-}
-/*
- * Pass fill character to JS
- */
-:root {
-  --uk-leader-fill-content: .;
-}
-/* ========================================================================
    Component: Notification
  ========================================================================== */
 /*
@@ -4468,92 +4225,6 @@ select.uk-form-width-xsmall {
 .uk-tooltip.uk-active {
   display: block;
 }
-/* ========================================================================
-   Component: Sortable
- ========================================================================== */
-.uk-sortable {
-  position: relative;
-}
-/*
- * Remove margin from the last-child
- */
-.uk-sortable > :last-child {
-  margin-bottom: 0;
-}
-/* Drag
- ========================================================================== */
-.uk-sortable-drag {
-  position: fixed !important;
-  z-index: 1050 !important;
-  pointer-events: none;
-}
-/* Placeholder
- ========================================================================== */
-.uk-sortable-placeholder {
-  opacity: 0;
-  pointer-events: none;
-}
-/* Empty modifier
- ========================================================================== */
-.uk-sortable-empty {
-  min-height: 50px;
-}
-/* Handle
- ========================================================================== */
-/* Hover */
-.uk-sortable-handle:hover {
-  cursor: move;
-}
-/* ========================================================================
-   Component: Countdown
- ========================================================================== */
-/* Item
- ========================================================================== */
-/* Number
- ========================================================================== */
-/*
- * 1. Make numbers all of the same size to prevent jumping. Must be supported by the font.
- * 2. Style
- */
-.uk-countdown-number {
-  /* 1 */
-  font-variant-numeric: tabular-nums;
-  /* 2 */
-  font-size: 2rem;
-  line-height: 0.8;
-}
-/* Phone landscape and bigger */
-@media (min-width: 640px) {
-  .uk-countdown-number {
-    font-size: 4rem;
-  }
-}
-/* Tablet landscape and bigger */
-@media (min-width: 960px) {
-  .uk-countdown-number {
-    font-size: 6rem;
-  }
-}
-/* Separator
- ========================================================================== */
-.uk-countdown-separator {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-/* Phone landscape and bigger */
-@media (min-width: 640px) {
-  .uk-countdown-separator {
-    font-size: 2rem;
-  }
-}
-/* Tablet landscape and bigger */
-@media (min-width: 960px) {
-  .uk-countdown-separator {
-    font-size: 3rem;
-  }
-}
-/* Label
- ========================================================================== */
 /* ========================================================================
    Component: Grid
  ========================================================================== */
@@ -9466,4 +9137,7 @@ iframe[data-uk-cover] {
   h3 {
     page-break-after: avoid;
   }
+}
+.test {
+  color: red;
 }
